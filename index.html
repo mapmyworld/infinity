@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<title>Infinity Map</title>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image" href="img/mmw.png">
+
+		<!-- <base href="../dev/"/> -->
+		<!--<base href="../dist/"/>-->
+		<base href="https://mapmyworld.github.io"/>
+
+		<link rel='stylesheet' href='https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.css' />
+		<script src='https://unpkg.com/maplibre-gl@3.2.1/dist/maplibre-gl.js'></script>
+		<script src='https://unpkg.com/topojson-client@3.1.0/dist/topojson-client.min.js'></script>
+		<script src='/maplibre-ext/layer.esri.js'></script>
+		<script src='/maplibre-ext/layer.js'></script>
+
+		<link rel='stylesheet' href='css/index.css' />
+		<link rel='stylesheet' href='css/control.css' />
+		<link rel='stylesheet' href='css/overlay.css' />
+		<link rel='stylesheet' href='css/component.css' />
+
+	</head>
+
+	<body>
+		<div id="map"></div>
+		<div id="mmw-overlay-container">
+			
+			<div class="top left mmw-overlay">
+				<div class="mmw-overlay-group" id="header" onclick="mmw._common.goHome()">
+					<img class="logo" src="img/mmw.png" title="Map My World"></img> <h3>MAP MY WORLD</h3>
+				</div>
+			</div>
+		</div>
+		<script src='mmw.js'></script>
+
+		<!-- <script defer src='http://localhost:8080/infinity/infinity.js'></script> -->
+		<script defer src='../infinity/infinity.js'></script>
+	</body>
+
+</html>
